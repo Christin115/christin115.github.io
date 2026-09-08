@@ -12,8 +12,12 @@ const SKILL_GROUPS = [
     skills: ["Flask", "SQLAlchemy", "Alembic", "Flask-Bcrypt", "Flask-CORS"],
   },
   {
+    label: "Testing",
+    skills: ["pytest", "Vitest", "React Testing Library"],
+  },
+  {
     label: "Data & Tools",
-    skills: ["SQLite", "Git", "GitHub", "pytest", "REST APIs"],
+    skills: ["SQLite", "Git", "GitHub", "REST APIs"],
   },
 ];
 
