@@ -16,6 +16,9 @@ function Hero() {
         <a className="btn btn-primary" href="#projects">
           View Projects
         </a>
+        <a className="btn btn-ghost" href="/resume.html" target="_blank" rel="noopener noreferrer">
+          Resume ↗
+        </a>
         <a className="btn btn-ghost" href="#contact">
           Get in Touch
         </a>

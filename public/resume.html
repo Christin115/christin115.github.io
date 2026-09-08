@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christin Jordan — Resume</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    />
+    <style>
+      :root {
+        --bg: #0f1117;
+        --surface: #171a23;
+        --border: #262a38;
+        --text: #e8e9f0;
+        --muted: #868aa0;
+        --accent: #ff6b5b;
+        --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font-sans);
+        line-height: 1.6;
+      }
+
+      .page {
+        width: min(760px, 92%);
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+      }
+
+      .print-bar {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1.5rem;
+      }
+
+      .print-btn {
+        font-family: var(--font-sans);
+        font-weight: 600;
+        font-size: 0.9rem;
+        background: var(--accent);
+        color: #14100f;
+        border: none;
+        border-radius: 8px;
+        padding: 0.7rem 1.3rem;
+        cursor: pointer;
+      }
+
+      .print-btn:hover {
+        opacity: 0.9;
+      }
+
+      header h1 {
+        font-size: 2.2rem;
+        margin: 0;
+      }
+
+      header .title {
+        font-family: var(--font-mono);
+        color: var(--accent);
+        font-size: 1rem;
+        margin-top: 0.4rem;
+      }
+
+      .contact-line {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem 1rem;
+      }
+
+      .contact-line a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .contact-line a:hover {
+        color: var(--accent);
+      }
+
+      section {
+        margin-top: 2.25rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+      }
+
+      section h2 {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        font-weight: 500;
+        margin: 0 0 1rem;
+      }
+
+      section p {
+        margin: 0;
+        color: var(--text);
+        max-width: 68ch;
+      }
+
+      .entry {
+        margin-bottom: 1.25rem;
+      }
+
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .entry-head strong {
+        font-size: 1.02rem;
+      }
+
+      .entry-head span {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      .entry ul {
+        margin: 0.6rem 0 0;
+        padding-left: 1.1rem;
+        color: var(--muted);
+      }
+
+      .entry ul li {
+        margin-bottom: 0.35rem;
+      }
+
+      .entry ul li::marker {
+        color: var(--accent);
+      }
+
+      .placeholder {
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      .skills-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 0.75rem;
+        margin-bottom: 0.9rem;
+      }
+
+      .skills-row:last-child {
+        margin-bottom: 0;
+      }
+
+      .skills-row .label {
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        color: var(--muted);
+        min-width: 100px;
+      }
+
+      .skills-row .items {
+        font-size: 0.92rem;
+        color: var(--text);
+      }
+
+      @media print {
+        :root {
+          --bg: #ffffff;
+          --surface: #ffffff;
+          --border: #d8d8d8;
+          --text: #1a1a1a;
+          --muted: #555555;
+          --accent: #b8452f;
+        }
+
+        body {
+          background: #ffffff;
+        }
+
+        .print-bar {
+          display: none;
+        }
+
+        .page {
+          width: 100%;
+          padding: 0;
+        }
+
+        section {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="print-bar">
+        <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+
+      <header>
+        <h1>Christin Jordan</h1>
+        <div class="title">Full-Stack Software Engineer</div>
+        <div class="contact-line">
+          <a href="mailto:cmjordan115@gmail.com">cmjordan115@gmail.com</a>
+          <a href="https://github.com/Christin115" target="_blank" rel="noopener noreferrer">github.com/Christin115</a>
+          <a href="https://www.linkedin.com/in/christin-jordan-6b92b0181" target="_blank" rel="noopener noreferrer">linkedin.com/in/christin-jordan</a>
+          <a href="https://christin115.github.io" target="_blank" rel="noopener noreferrer">christin115.github.io</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Summary</h2>
+        <p>
+          Full-stack software engineer who likes turning messy, real-world problems into
+          software people actually want to use. Comfortable across the stack — React on the
+          frontend, Flask and SQLAlchemy on the backend — with a focus on clean data modeling,
+          automated testing, and tracking down the bug nobody else wants to touch.
+        </p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <strong>Flatiron School — AI Engineering Immersive Program</strong>
+            <span class="placeholder">[add start/end dates]</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <p class="placeholder">[Add prior work experience, internships, or relevant employment here.]</p>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>DM Command Center</strong>
+            <span>React · Flask · SQLAlchemy</span>
+          </div>
+          <ul>
+            <li>
+              Full-stack campaign-management app for tabletop Dungeon Masters with session auth,
+              ownership-scoped routes, and 52 automated tests.
+            </li>
+            <li>
+              Combat encounter tracker with automatic initiative sorting and live monster data
+              pulled from an external API.
+            </li>
+            <li>
+              Searchable D&amp;D 5e compendium rendering full stat blocks, plus a session
+              scheduler with one-click Google Calendar export.
+            </li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>Inventory Management System</strong>
+            <span>Flask · SQLAlchemy · REST API</span>
+          </div>
+          <ul>
+            <li>
+              Flask REST API with a layered models/routes/services architecture, full CRUD,
+              search, and low-stock detection.
+            </li>
+            <li>
+              Barcode-driven product import via the OpenFoodFacts API, with duplicate-barcode
+              protection.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-row">
+          <span class="label">Languages</span>
+          <span class="items">JavaScript, Python</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Frontend</span>
+          <span class="items">React, Vite, React Router, Context API, CSS</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Backend</span>
+          <span class="items">Flask, SQLAlchemy, Alembic, Flask-Bcrypt, Flask-CORS</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Tools</span>
+          <span class="items">SQLite, Git, GitHub, pytest, REST APIs</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
