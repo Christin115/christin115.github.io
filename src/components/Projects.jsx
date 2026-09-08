@@ -26,6 +26,13 @@ const PROJECTS = [
       "Session scheduler with one-click Google Calendar export",
       "Session-based auth with bcrypt hashing and ownership-scoped routes, verified by dedicated access-control tests",
     ],
+    challenge:
+      "Running the test suite was silently wiping my real development database. Flask-Migrate " +
+      "binds the SQLAlchemy engine to the database URL at import time — before the test fixture " +
+      "ever got a chance to switch to an in-memory database — so every test run was dropping " +
+      "tables against my actual dev data. The fix was reading the database URL from an " +
+      "environment variable set in a conftest.py, so tests bind to an isolated database from " +
+      "their very first connection.",
   },
   {
     name: "Inventory Management System",
@@ -41,6 +48,12 @@ const PROJECTS = [
       "Layered architecture — models, routes, and services kept in separate modules",
       "Both a REST API and a CLI interface on top of the same service layer",
     ],
+    challenge:
+      "The barcode import needed to handle a real external API that can fail, return a partial " +
+      "product record, or get scanned twice. Keeping that logic in its own services module — " +
+      "separate from the route handlers — meant the API layer only has to decide what HTTP " +
+      "status to return, not how to parse OpenFoodFacts' response shape or decide whether a " +
+      "barcode already exists.",
   },
 ];
 
@@ -84,6 +97,13 @@ function Projects() {
                 </li>
               ))}
             </ul>
+
+            {project.challenge && (
+              <div className="project-challenge">
+                <h4>The challenge</h4>
+                <p>{project.challenge}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
