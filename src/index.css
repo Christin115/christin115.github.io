@@ -473,6 +473,36 @@ p {
   max-width: 68ch;
 }
 
+.project-screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.project-screenshots a {
+  display: block;
+  width: clamp(140px, 22vw, 190px);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.project-screenshots a:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.project-screenshots img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+}
+
 .project-demo-note {
   margin-top: 0.75rem;
   font-family: var(--font-mono);

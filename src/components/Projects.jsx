@@ -1,8 +1,19 @@
+import dmHome from "../assets/screenshots/dm-command-center/home.jpg";
+import dmDashboard from "../assets/screenshots/dm-command-center/dashboard.jpg";
+import dmNotes from "../assets/screenshots/dm-command-center/notes.jpg";
+import dmTasks from "../assets/screenshots/dm-command-center/tasks.jpg";
+
 const PROJECTS = [
   {
     name: "DM Command Center",
     github: "https://github.com/Christin115/dm-command-center",
     demo: "https://dm-command-center-five.vercel.app",
+    screenshots: [
+      { src: dmHome, alt: "DM Command Center home page" },
+      { src: dmDashboard, alt: "DM Dashboard showing a list of campaigns" },
+      { src: dmNotes, alt: "Campaign notes section with NPC and session notes" },
+      { src: dmTasks, alt: "Preparation tasks section with priority and status" },
+    ],
     description:
       "A full-stack campaign-management app for tabletop Dungeon Masters. Prep tasks, world " +
       "notes, a live combat encounter tracker, a searchable D&D 5e rules compendium, and " +
@@ -93,6 +104,21 @@ function Projects() {
             </div>
 
             <p className="project-desc">{project.description}</p>
+
+            {project.screenshots && (
+              <div className="project-screenshots">
+                {project.screenshots.map((shot) => (
+                  <a
+                    key={shot.src}
+                    href={shot.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={shot.src} alt={shot.alt} loading="lazy" />
+                  </a>
+                ))}
+              </div>
+            )}
 
             {project.demo && (
               <p className="project-demo-note">
