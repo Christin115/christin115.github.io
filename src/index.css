@@ -425,6 +425,14 @@ p {
   max-width: 68ch;
 }
 
+.project-demo-note {
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;

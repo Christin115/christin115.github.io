@@ -2,6 +2,7 @@ const PROJECTS = [
   {
     name: "DM Command Center",
     github: "https://github.com/Christin115/dm-command-center",
+    demo: "https://dm-command-center-five.vercel.app",
     description:
       "A full-stack campaign-management app for tabletop Dungeon Masters. Prep tasks, world " +
       "notes, a live combat encounter tracker, a searchable D&D 5e rules compendium, and " +
@@ -70,6 +71,16 @@ function Projects() {
               <h3>{project.name}</h3>
 
               <div className="project-links">
+                {project.demo && (
+                  <a
+                    className="btn btn-primary"
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo ↗
+                  </a>
+                )}
                 <a
                   className="btn btn-ghost"
                   href={project.github}
@@ -82,6 +93,13 @@ function Projects() {
             </div>
 
             <p className="project-desc">{project.description}</p>
+
+            {project.demo && (
+              <p className="project-demo-note">
+                Hosted on a free tier — the backend sleeps after inactivity, so the first load
+                can take ~30–50 seconds to wake up.
+              </p>
+            )}
 
             <div className="project-tags">
               {project.tags.map((tag) => (
