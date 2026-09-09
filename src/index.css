@@ -589,3 +589,37 @@ p {
   font-size: 0.78rem;
   color: var(--muted-2);
 }
+
+/* ---------- scroll to top ---------- */
+
+.scroll-top-btn {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2.5rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #14100f;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px -8px #000000cc;
+  z-index: 30;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.scroll-top-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.scroll-top-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
