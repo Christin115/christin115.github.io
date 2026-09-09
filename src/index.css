@@ -607,9 +607,9 @@ p {
 .skill-tags span {
   font-family: var(--font-mono);
   font-size: 0.82rem;
-  color: var(--yellow);
-  background: var(--yellow-soft);
-  border: 1px solid var(--yellow);
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 0.4rem 0.7rem;
 }
