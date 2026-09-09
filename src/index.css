@@ -523,8 +523,9 @@ p {
 .project-tags span {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--muted);
-  border: 1px solid var(--border);
+  color: var(--yellow);
+  background: var(--yellow-soft);
+  border: 1px solid var(--yellow);
   border-radius: 6px;
   padding: 0.3rem 0.6rem;
 }
@@ -606,17 +607,11 @@ p {
 .skill-tags span {
   font-family: var(--font-mono);
   font-size: 0.82rem;
-  color: var(--text);
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 0.4rem 0.7rem;
-}
-
-.skill-tags span.highlight {
   color: var(--yellow);
   background: var(--yellow-soft);
-  border-color: var(--yellow);
+  border: 1px solid var(--yellow);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
 }
 
 /* ---------- contact ---------- */

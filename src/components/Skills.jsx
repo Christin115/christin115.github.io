@@ -1,5 +1,3 @@
-const HIGHLIGHTED_GROUPS = new Set(["Languages", "Backend", "Testing"]);
-
 const SKILL_GROUPS = [
   {
     label: "Languages",
@@ -35,12 +33,7 @@ function Skills() {
             <h3>{group.label}</h3>
             <div className="skill-tags">
               {group.skills.map((skill) => (
-                <span
-                  key={skill}
-                  className={HIGHLIGHTED_GROUPS.has(group.label) ? "highlight" : undefined}
-                >
-                  {skill}
-                </span>
+                <span key={skill}>{skill}</span>
               ))}
             </div>
           </div>
