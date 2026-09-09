@@ -168,6 +168,44 @@ p {
   background: var(--accent);
 }
 
+.gutter-contact-label,
+.gutter-contact {
+  display: none;
+}
+
+@media (min-width: 901px) {
+  .gutter-contact-label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    margin-bottom: 0.9rem;
+  }
+
+  .gutter-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+  }
+
+  .gutter-contact a {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .gutter-contact a:hover {
+    color: var(--accent);
+  }
+}
+
 .gutter-status {
   display: none;
 }
