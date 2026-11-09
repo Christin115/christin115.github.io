@@ -45,7 +45,7 @@ function Gutter() {
           ))}
         </ul>
 
-        <div className="gutter-status">Open to internships</div>
+        <div className="gutter-status">Open to work</div>
       </div>
     </nav>
   );

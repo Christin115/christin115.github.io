@@ -1,7 +1,11 @@
 const SKILL_GROUPS = [
   {
     label: "Languages",
-    skills: ["JavaScript", "Python"],
+    skills: ["JavaScript", "Python", "SQL"],
+  },
+  {
+    label: "AI & Data",
+    skills: ["LLM tool calling", "RAG", "Ollama", "AnythingLLM", "pandas"],
   },
   {
     label: "Frontend",
@@ -17,7 +21,7 @@ const SKILL_GROUPS = [
   },
   {
     label: "Data & Tools",
-    skills: ["SQLite", "Git", "GitHub", "REST APIs"],
+    skills: ["SQLite", "PostgreSQL", "MongoDB", "REST APIs", "Git", "GitHub Actions", "Docker"],
   },
 ];
 

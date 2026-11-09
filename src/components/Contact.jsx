@@ -4,7 +4,7 @@ function Contact() {
       <div className="eyebrow">04 — contact</div>
       <h2 style={{ marginBottom: "0.75rem" }}>Let's talk</h2>
       <p>
-        I'm currently looking for a software engineering internship — reach out if you'd like to
+        I'm currently looking for junior software engineering roles and internships — reach out if you'd like to
         talk about an opportunity, or just want to talk shop about a project.
       </p>
 
