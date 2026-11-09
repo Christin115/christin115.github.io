@@ -5,6 +5,40 @@ import dmTasks from "../assets/screenshots/dm-command-center/tasks.jpg";
 
 const PROJECTS = [
   {
+    name: "Research Aide",
+    github: "https://github.com/sttrackstar/RAG-ProjectB",
+    description:
+      "A 4-person team project: an AI agent that answers questions from a team's internal " +
+      "documents and the open web, cites its sources, shows every step it took, and asks for " +
+      "approval before doing anything consequential. It runs fully locally on Llama 3.1 8B, " +
+      "with a custom tool-calling loop in Flask, AnythingLLM for retrieval, and a React chat UI.",
+    tags: [
+      "Python",
+      "Flask",
+      "React",
+      "Vite",
+      "Ollama",
+      "Llama 3.1",
+      "AnythingLLM",
+      "RAG",
+      "SQLite",
+      "pytest",
+      "GitHub Actions",
+    ],
+    features: [
+      "Built the agent loop and its tools: document search over AnythingLLM, Wikipedia web search, and a note-saving tool behind a single-use Confirm/Cancel guardrail",
+      "Added an observability log that records every model and tool call with inputs, outputs, and timing, linked from each answer",
+      "Wrote a 10-task evaluation set and raised the success rate from 27/30 to 30/30 by fixing how the agent phrased its searches",
+      "Added login and per-user history (SQLite, hashed passwords), plus a CI pipeline that runs 70+ tests on every pull request with the model faked out",
+    ],
+    challenge:
+      "Agent calls kept timing out even though each piece worked on its own. The cause was " +
+      "hidden: the agent asked Ollama for a 4,096-token context window while AnythingLLM asked " +
+      "for 16,384, so Ollama silently unloaded and reloaded the 8B model every time the two " +
+      "took turns. Matching the context windows stopped the reloads, and a warm-up request at " +
+      "startup cut the first answer from 28.5 seconds to 6.2.",
+  },
+  {
     name: "DM Command Center",
     github: "https://github.com/Christin115/dm-command-center",
     demo: "https://dm-command-center-five.vercel.app",
