@@ -157,6 +157,22 @@
         color: var(--accent);
       }
 
+      .entry-head a {
+        color: var(--accent);
+        text-decoration: none;
+        margin-left: 0.5rem;
+      }
+
+      .entry-head a:hover {
+        text-decoration: underline;
+      }
+
+      .sub {
+        color: var(--muted);
+        font-size: 0.92rem;
+        margin-top: 0.15rem;
+      }
+
       .placeholder {
         color: var(--muted);
         font-style: italic;
@@ -268,6 +284,11 @@
           margin-top: 0.15rem;
         }
 
+        .sub {
+          font-size: 8.5pt;
+          margin-top: 0.05rem;
+        }
+
         .entry ul li {
           margin-bottom: 0.05rem;
         }
@@ -296,13 +317,13 @@
 
       <header>
         <h1>Christin Jordan</h1>
-        <div class="title">Full-Stack Software Engineer</div>
+        <div class="title">Junior Software Developer</div>
         <div class="contact-line">
           <span>Philadelphia, PA</span>
           <span>267-275-1634</span>
           <a href="mailto:cmjordan115@gmail.com">cmjordan115@gmail.com</a>
-          <a href="https://github.com/Christin115" target="_blank" rel="noopener noreferrer">github.com/Christin115</a>
-          <a href="https://www.linkedin.com/in/christin-jordan-6b92b0181" target="_blank" rel="noopener noreferrer">linkedin.com/in/christin-jordan-6b92b0181</a>
+          <a href="https://www.linkedin.com/in/christin-jordan-6b92b0181" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Christin115" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://christin115.github.io" target="_blank" rel="noopener noreferrer">christin115.github.io</a>
         </div>
       </header>
@@ -310,11 +331,113 @@
       <section>
         <h2>Summary</h2>
         <p>
-          Full-stack software engineer who likes turning messy, real-world problems into
-          software people actually want to use. Comfortable across the stack — React on the
-          frontend, Flask and SQLAlchemy on the backend — with a focus on clean data modeling,
-          automated testing, and tracking down the bug nobody else wants to touch.
+          Full stack developer (Python/Flask, React, Java) in Flatiron School's AI Engineering
+          Immersive, with 4+ years of IT support at a Target distribution center. Fixed a ZPL label
+          microservice used by 300+ daily users, and built the agent loop, guardrails, and test
+          pipeline for a team AI research agent.
         </p>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-row">
+          <span class="label">Languages</span>
+          <span class="items">Python, JavaScript, SQL, Java, C#, HTML, CSS</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Frontend</span>
+          <span class="items">React, Vite, React Router, Context API</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Backend</span>
+          <span class="items">Flask, SQLAlchemy, Spring Boot, Node.js, REST APIs, Microservices, Authentication</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">AI &amp; Data</span>
+          <span class="items">LLM tool calling, RAG, Ollama, AnythingLLM, pandas</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Testing &amp; CI</span>
+          <span class="items">pytest, Vitest, React Testing Library, GitHub Actions</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Databases</span>
+          <span class="items">MySQL, PostgreSQL, SQLite, MongoDB, JPA/Hibernate</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Tools</span>
+          <span class="items">Git, GitHub, Docker, VS Code, npm</span>
+        </div>
+        <div class="skills-row">
+          <span class="label">Systems</span>
+          <span class="items">Windows, Ticketing Systems, Troubleshooting, ZPL, ERP, WMS</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>Research Aide (AI Agent, 4-person team)</strong>
+            <span>Python · Flask · React · Ollama · RAG<a href="https://github.com/sttrackstar/RAG-ProjectB" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span>
+          </div>
+          <ul>
+            <li>AI agent that answers questions from internal documents and the web, cites its sources, and shows every step in a trace panel; runs fully locally via Ollama.</li>
+            <li>Built the tool-calling agent loop, a single-use confirmation guardrail, an observability log of every model and tool call, and login with per-user history.</li>
+            <li>Raised the evaluation pass rate from 27/30 to 30/30 and cut cold-start latency from ~29s to ~6s.</li>
+            <li>Set up GitHub Actions CI running 70+ pytest tests on every pull request.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>DM Command Center</strong>
+            <span>React · Flask · SQLAlchemy<a href="https://github.com/Christin115/dm-command-center" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span>
+          </div>
+          <ul>
+            <li>Built a full-stack campaign manager for tabletop game masters with bcrypt session auth and ownership-scoped routes.</li>
+            <li>Added a combat tracker with automatic initiative ordering and live monster stats from the D&amp;D 5e API.</li>
+            <li>Wrote 52 pytest tests covering auth, CRUD, validation, cascade deletes, and ownership protection.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>Game Ideas</strong>
+            <span>Java · Spring Boot · JPA/Hibernate · MySQL<a href="https://github.com/Christin115/game-ideas-spring-boot" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span>
+          </div>
+          <ul>
+            <li>Built a Spring Boot MVC app where users register, log in, and create, edit, and delete game ideas.</li>
+            <li>Modeled a one-to-many user-to-game relationship with Spring Data JPA and MySQL, with BCrypt password hashing and server-side validation.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <strong>Target Distribution Center — IT Support Specialist</strong>
+            <span>Philadelphia, PA · May 2022 – Present</span>
+          </div>
+          <ul>
+            <li>Fixed a ZPL label-printing microservice, cutting response time 30% for 300+ daily users.</li>
+            <li>Built and presented database analytics supporting shipment processing of 60,000 units weekly.</li>
+            <li>Troubleshot and resolved Windows, software, and hardware issues through a ticketing system.</li>
+            <li>Trained and monitored 60–80 associates on systems and workflows.</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <div class="entry-head">
+            <strong>Amazon Fulfillment Center — Process Assistant (Part-time)</strong>
+            <span>Philadelphia, PA · Mar 2023 – Apr 2024</span>
+          </div>
+          <ul>
+            <li>Reconciled inventory and cycle counts in ERP and WMS systems.</li>
+            <li>Reported operational metrics for high-volume fulfillment workflows.</li>
+          </ul>
+        </div>
       </section>
 
       <section>
@@ -327,132 +450,10 @@
         </div>
         <div class="entry">
           <div class="entry-head">
-            <strong>Coding Dojo — Web Fundamentals, Python, Java, Project Building &amp; Algorithms</strong>
+            <strong>Coding Dojo (part of Colorado Technical University) — Online</strong>
             <span>Mar 2024 – Jan 2025</span>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <h2>Experience</h2>
-        <div class="entry">
-          <div class="entry-head">
-            <strong>Target Distribution Center — IT Support Specialist</strong>
-            <span>Philadelphia, PA · May 2022 – Present</span>
-          </div>
-          <ul>
-            <li>Led corrections of a microservice using ZPL, reducing API response time by 30% and supporting 300+ daily users.</li>
-            <li>Reviewed, recommended, and implemented database analytics supporting shipment processing averaging 60,000 units weekly.</li>
-            <li>Provided technical training, assignments, and performance monitoring for 60–80 associates.</li>
-            <li>Improved workflow efficiency by troubleshooting operational and software-related bottlenecks.</li>
-          </ul>
-        </div>
-        <div class="entry">
-          <div class="entry-head">
-            <strong>Amazon Fulfillment Center — Process Assistant</strong>
-            <span>Philadelphia, PA · Mar 2023 – Apr 2024</span>
-          </div>
-          <ul>
-            <li>Maintained accurate inventory and scheduling records across warehouse systems.</li>
-            <li>Supervised material flow, storage, and order fulfillment operations.</li>
-            <li>Conducted inventory audits and cycle counts using ERP and WMS systems.</li>
-            <li>Reported operational metrics while supporting high-volume logistics workflows.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2>Projects</h2>
-
-        <div class="entry">
-          <div class="entry-head">
-            <strong>Research Aide (team project)</strong>
-            <span>Python · Flask · React · Llama 3.1 · RAG</span>
-          </div>
-          <ul>
-            <li>
-              AI agent that answers questions from internal documents (AnythingLLM) and the web,
-              cites its sources, and shows every step in a trace panel; runs fully locally via Ollama.
-            </li>
-            <li>
-              Built the tool-calling agent loop, a single-use confirmation guardrail, an
-              observability log of every model and tool call, and login with per-user history.
-            </li>
-            <li>
-              Raised the evaluation success rate from 27/30 to 30/30, cut cold-start latency from
-              28.5s to 6.2s, and set up CI running 70+ tests on every pull request.
-            </li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <strong>DM Command Center</strong>
-            <span>React · Flask · SQLAlchemy</span>
-          </div>
-          <ul>
-            <li>
-              Full-stack campaign-management app for tabletop Dungeon Masters with session auth,
-              ownership-scoped routes, and 52 automated tests.
-            </li>
-            <li>
-              Combat encounter tracker with automatic initiative sorting and live monster data
-              pulled from an external API.
-            </li>
-            <li>
-              Searchable D&amp;D 5e compendium rendering full stat blocks, plus a session
-              scheduler with one-click Google Calendar export.
-            </li>
-          </ul>
-        </div>
-
-        <div class="entry">
-          <div class="entry-head">
-            <strong>Inventory Management System</strong>
-            <span>Flask · SQLAlchemy · REST API</span>
-          </div>
-          <ul>
-            <li>
-              Flask REST API with a layered models/routes/services architecture, full CRUD,
-              search, and low-stock detection.
-            </li>
-            <li>
-              Barcode-driven product import via the OpenFoodFacts API, with duplicate-barcode
-              protection.
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2>Skills</h2>
-        <div class="skills-row">
-          <span class="label">Languages</span>
-          <span class="items">JavaScript, Python, SQL, Java, C#, HTML, CSS</span>
-        </div>
-        <div class="skills-row">
-          <span class="label">Frontend</span>
-          <span class="items">React, Vite, React Router, Context API</span>
-        </div>
-        <div class="skills-row">
-          <span class="label">Backend</span>
-          <span class="items">Flask, Node.js, SQLAlchemy, Alembic, Flask-Bcrypt, Flask-CORS, REST APIs</span>
-        </div>
-        <div class="skills-row">
-          <span class="label">Databases</span>
-          <span class="items">SQLite, PostgreSQL, MongoDB</span>
-        </div>
-        <div class="skills-row">
-          <span class="label">AI &amp; Data</span>
-          <span class="items">LLM tool calling, RAG, Ollama, AnythingLLM, pandas</span>
-        </div>
-        <div class="skills-row">
-          <span class="label">Testing</span>
-          <span class="items">pytest, Vitest, React Testing Library</span>
-        </div>
-        <div class="skills-row">
-          <span class="label">Tools</span>
-          <span class="items">Git, GitHub, GitHub Actions, Docker, VS Code, npm</span>
+          <div class="sub">Certificate of Completion, Software Development: Python, Java, Web Fundamentals, Algorithms, Project Building</div>
         </div>
       </section>
     </div>

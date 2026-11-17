@@ -81,6 +81,20 @@ const PROJECTS = [
       "their very first connection.",
   },
   {
+    name: "Game Ideas",
+    github: "https://github.com/Christin115/game-ideas-spring-boot",
+    description:
+      "A Spring Boot web app where users sign up, post ideas for video games, and browse what " +
+      "others have shared. Built solo as my Coding Dojo Java-stack project, using a " +
+      "controller → service → repository design on top of Spring Data JPA and MySQL.",
+    tags: ["Java", "Spring Boot", "Spring MVC", "JPA/Hibernate", "MySQL", "JSP", "BCrypt", "Maven"],
+    features: [
+      "Registration and login with BCrypt password hashing and session-protected pages",
+      "Full CRUD for game ideas, each linked to its creator through a one-to-many JPA relationship",
+      "Server-side validation with Bean Validation annotations, with errors shown on the form",
+    ],
+  },
+  {
     name: "Inventory Management System",
     github: "https://github.com/Christin115/inventory-management-system",
     description:

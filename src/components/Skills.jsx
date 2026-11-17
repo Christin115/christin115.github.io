@@ -1,7 +1,7 @@
 const SKILL_GROUPS = [
   {
     label: "Languages",
-    skills: ["JavaScript", "Python", "SQL"],
+    skills: ["JavaScript", "Python", "SQL", "Java"],
   },
   {
     label: "AI & Data",
@@ -13,7 +13,7 @@ const SKILL_GROUPS = [
   },
   {
     label: "Backend",
-    skills: ["Flask", "SQLAlchemy", "Alembic", "Flask-Bcrypt", "Flask-CORS"],
+    skills: ["Flask", "SQLAlchemy", "Alembic", "Flask-Bcrypt", "Flask-CORS", "Spring Boot"],
   },
   {
     label: "Testing",
@@ -21,7 +21,7 @@ const SKILL_GROUPS = [
   },
   {
     label: "Data & Tools",
-    skills: ["SQLite", "PostgreSQL", "MongoDB", "REST APIs", "Git", "GitHub Actions", "Docker"],
+    skills: ["MySQL", "SQLite", "PostgreSQL", "MongoDB", "REST APIs", "Git", "GitHub Actions", "Docker"],
   },
 ];
 
