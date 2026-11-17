@@ -6,7 +6,7 @@ function Hero() {
           <div className="hero-status">Open to software engineering roles</div>
 
           <h1>Christin Jordan</h1>
-          <div className="hero-title">Full-Stack Software Engineer</div>
+          <div className="hero-title">Junior Software Developer</div>
 
           <p>Full-stack engineer building real applications with React and Flask, from web apps to AI agents.</p>
 

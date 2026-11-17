@@ -1,6 +1,6 @@
 # christin115.github.io
 
-Personal portfolio site for Christin Jordan — Full-Stack Software Engineer.
+Personal portfolio site for Christin Jordan — Junior Software Developer.
 
 Live at [christin115.github.io](https://christin115.github.io).
 
